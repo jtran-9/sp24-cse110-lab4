@@ -160,4 +160,10 @@ We enter the modifyArray function and it initializes newArr to an empty list. We
 
 ***Question 18:*** See part2-question18.js
 
-***Question 19:*** See part2-question16.js
+***Question 19:*** The function prints out the following output...
+```
+1
+3
+4
+2
+```
