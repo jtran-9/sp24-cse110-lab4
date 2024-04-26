@@ -152,7 +152,11 @@ Since Boolean() is called with a non-zero number, it returns true, and since tru
 
 ***Question 16:*** See part2-question16.js
 
-***Question 17:***
+***Question 17:*** It would return the new array...
+```
+[2,4,6]
+```
+We enter the modifyArray function and it initializes newArr to an empty list. We then go through the for-loop. For each array index, we call doSomething() with the array value. The function that we passed in as a parameter multiplies the given number by 2 and returns it. Therefore, we can see that this for-loop essentially takes each array value and multiplies it by 2 and then pushes it into the new array. Finally, the function returns the newArr, which contains all the values in the original array but multipled by 2.
 
 ***Question 18:*** See part2-question18.js
 
