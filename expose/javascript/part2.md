@@ -79,59 +79,81 @@ A. '3' + 2
 ```
 '32'
 ```
+This is because add operation start with a string, so when it reads the 2, it just concatenates the 2 at the end of the string, returning the final string '32'. <br> <br>
 B. '3' - 2
 ```
 1
 ```
+Since this is a subtraction operation and you can't subtract strings together, it takes the '3' as an integer and computates 3-2, resulting in 1. <br> <br>
 C. 3 + null
 ```
 3
 ```
+Null is seen by Javascript as 0, so this expression can be converted to 3+0, which outputs 3. <br> <br>
 D. '3' + null
 ```
 '3null'
 ```
+Since the expression starts with a string, '3', and uses an add operation, it just turns null into a string and returns the concatenated string. Therefore it returns '3null'. <br> <br>
 E. true + 3
 ```
 4
 ```
+True becomes 1 in Javascript, so it computes 1 + 3, which results in 4. <br> <br>
 F. false + null
 ```
 0
 ```
+Both false and null in Javascript become 0, so it computes 0 + 0, which results in 0. <br> <br>
 G. '3' + undefined
 ```
 '3undefined'
 ```
+Since the expression starts with a string and uses the add operation, it turns undefined into a string and concatenates the two to return '3undefined'. <br> <br>
 H. '3' - undefined
 ```
 NaN
 ```
+Since expression uses the subtract operation, it tries to turn undefined into an integer, which in Javascript, becomes NaN. Therefore, the final computation would look like 3 - NaN, which results in NaN. <br> <br>
 
 ***Question 14:*** <br>
 A. '2' > 1
 ```
 true
 ```
+This is because Javascript turns '2' into an integer and since 2 is greater than 1, it returns true. <br> <br>
 B. '2' < '12'
 ```
 false
 ```
+When comparing strings, it compares it character by character, so when it compares '2' and '1', it sees that '2' is greater than '1' so it returns false. <br> <br>
 C. 2 == '2'
 ```
 true
 ```
+It's performing a regular equality check and since it turns the string into an integer and 2 == 2, it returns true. <br> <br>
 D. 2 === '2'
 ```
 false
 ```
+It performs a strict equality operator, therefore it checks without any type conversions. Since one is an integer and the other is a string, it returns false. <br> <br>
 E. true == 2
 ```
 false
 ```
+Since in Javascript, true becomes 1 and since 1 is not equal to 2, it returns false. <br> <br>
 F. true === Boolean(2)
 ```
 true
 ```
+Since Boolean() is called with a non-zero number, it returns true, and since true and Boolean(2) are the same data type, when it performs a strict equality check, it returns true, since they are both booleans and they both hold the value true. <br> <br>
 
-***Question 15:*** The difference is that 
+***Question 15:*** The difference is that the regular equality check, ==, checks for equality after any needed type conversions. The strict equality check, ===, checks for type equality as well. It first checks if they are of the same type and then it checks for value equality.
+
+***Question 16:*** See part2-question16.js
+
+***Question 17:***
+
+***Question 18:*** See part2-question18.js
+
+***Question 19:*** See part2-question16.js
